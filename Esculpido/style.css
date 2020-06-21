@@ -1,0 +1,12 @@
+h1{
+    font-weight: 800px;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: .08em;/*espaçamento entre as letras*/
+    background-color: blue;
+    -webkit-background-clip: text;/*faz com que o background fique dentro dos caracteres*/
+    -moz-background-clip: text;
+    background-clip: text;/*faz com que o background fique dentro dos caracteres*/
+    color: transparent;
+    text-shadow: rgba(245,245,245,0.5) 3px 5px 1px;/* dá um efeito de sombra as letras */  
+}
