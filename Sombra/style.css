@@ -2,6 +2,7 @@ h1{
     font-weight: bold;
     font-size: 70pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: fantasy;
     color: blue;
     text-shadow: rgb(243, 53, 53) 4px 4px 4px;/* além de dar cor, ele permite mudar duplicar e mudar o tamanho de cada cor de cada caracter do texto */
 
