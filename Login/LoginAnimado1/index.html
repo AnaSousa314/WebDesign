@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginAnimado</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="flex-wrap">
+        <fieldset><!-- cria um campo, um retangulo -->
+            <form action novalidate><!-- cria um form -->
+                <input type="radio" name="rg" id="sign-in" checked /><!-- cria um radio já selecionado por causa do checked, com id -->
+                <input type="radio" name="rg" id="sign-up" />
+                <input type="radio" name="rg" id="reset" /><!-- cria um radio, mas não selecionado pois não possui o checked, com id -->
+                <!-- colocar o mesmo name nos três inputs serve para indicar que apenas 1 poderá estar selecionado por vez -->
+                <label for="sign-in">Sign in</label>
+                <label for="sign-up">Sign up</label>
+                <label for="reset">Reset</label>
+                <input 
+                class="sign-in sign-up reset"
+                type="email"
+                placeholder="Email"
+                ><!-- cria uma caixa de texto -->
+                <input 
+                class="sign-in sign-up" 
+                type="password"
+                placeholder="Password"><!--o type password, serve para não aparecer o que está sendo digitado no input -->
+                <input 
+                class="sign-in"
+                type="password"
+                placeholder="Repeat Password"
+                >
+                <button>Submit</button><!-- cria um botão escrito Submit -->      
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
