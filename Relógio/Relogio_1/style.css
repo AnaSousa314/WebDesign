@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    align-items: center;/*passa para o centro da pagina*/
+    justify-content: center;
+    min-height: 100vh;/*por aumentar a altura, passa para o meio da pagina*/
+    background-color: #060a1f;
+}
+
+#clock #time{
+    display: flex;/*deixa lado a lado*/
+}
+
+#clock #time div{
+    position: relative;
+    margin: 0 5px;/*aumenta o espaçamento das margens laterais da div*/
+    -webkit-box-reflect: below  1px linear-gradient(transparent,#0004); /*below: mostra o reflexo, 1px: cria uma distância de 1px entre a div e seu reflexo, linear-gradient: deixa o reflexo transparente em um tom de #0004, deixando quase invisivel*/
+}
+
+#clock #time div span{
+    position: relative;
+    display: block;/*deixa os spans dentro da div um em cima do outro como em um bloco*/
+    width: 100px;/*a largura dos span fica 100px*/
+    height: 80px;/*a altura  dos spans fica 80px*/
+    background: #2196f3;/*cor do fundo do span*/
+    color: #fff;/*cor da fonte usada no span*/
+    font-weight: 300;/*peso da font do span*/
+    text-align: center;/*alinhamento da texto do span*/
+    justify-content: center;    
+    align-items: center;
+    font-size: 3em;/*3em*/
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);/*efeito de sombra na linha do centro do span*/
+}
+
+#clock #time div span:nth-child(2)/*ele seleciona o 2º filho, que no caso é o 2º span*/{
+    height: 30px;
+    line-height: 30px;/*distância entre as linhas*/
+    font-size: .7em;
+    letter-spacing: .2em;/*aumenta o espaço entre os caratcteres da string*/
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: #127fd6;
+    text-transform: uppercase;/*deixa tudo maiusculo*/
+}
+
+/*muda a cor da ultima div dos seus spans*/
+#clock #time div:last-child span{
+    background: #ff006a;
+}
+
+/*muda a cor da ultima div, do ultimo span, o 2º*/
+#clock #time div:last-child span:nth-child(2){
+    background: #ec0062;
+}
+
+/*pega o 1º span de cada div e dá um espaçamento entre a altura das linhas*/
+#clock #time div span:nth-child(1){
+    line-height: 80px;
+}
+
+/*
+.button{
+    position: absolute;
+    min-height: 50vh;
+    margin-top: 300px;
+}
+
+.button button{
+    background: #2196f3;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    
+}
+*/
